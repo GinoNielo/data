@@ -1,5 +1,7 @@
 <?php
 include 'databaseconnectie.php';
+include 'navbar.php';
+
 session_start();
 
 if (isset($_SESSION['userId'])) {
@@ -23,13 +25,6 @@ try {
 
 
 
-// Get product details from the form
-
-// $model = $_POST['model'];
-// $kenteken = $_POST['kenteken'];
-// $kleur = $_POST['kleur'];
-// $jaar = $_POST['jaar'];
-
 
 
 ?>
@@ -39,6 +34,7 @@ try {
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
+    
 </head>
 <body><br><br><br>
 <a class="btn btn-primary" href="auto-toevoegen.php">Toevoegen Auto</a>
@@ -48,7 +44,7 @@ try {
     <form method="POST">
         <input type="text" name="gebruikersnaam" placeholder="gebruikersnaam"> <br> 
         <input type="password" name="wachtwoord" placeholder="wachtwoord"> <br>
-        <input type="submit">
+        <input type="submit" >
     </form>
     
     <br><br><br><br>

@@ -1,5 +1,6 @@
 <?php
 include 'databaseconnectie.php';
+include 'navbar.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $pdo = new Database();

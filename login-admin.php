@@ -16,7 +16,7 @@
                 $_SESSION['userId'] = $user['id'];
                 $_SESSION['naam'] = $user['naam'];
                 $_SESSION['role'] = $user['role'];
-                header('Location:home.php?ingelogd');
+                header('Location:beheerder.php?ingelogd');
             } else {
                 echo "incorrect gebruikersnaam or wachtwoord";
             }
@@ -42,9 +42,9 @@
         <style>body{background-color: #333;} h1{color: white}</style>
     </head>
     <body>
-        <br><br><br>
+    <br><br><br>
         <div class="d-flex flex-column align-items-center">
-        <h1>Log in</h1><br>
+        <h1>Log in Admin</h1><br>
         <form method="POST">
         <div class="mb-3">
             <input type="text" name="gebruikersnaam" placeholder="gebruikersnaam" required>
@@ -52,12 +52,9 @@
         <div class="mb-3">
             <input type="password" name="wachtwoord" placeholder="Password" required>
         </div>
-            <input type="submit" class="btn btn-primary"><br><br>
-            <a href="login-admin.php" class="btn btn-primary">Admin? Log dan hier in!</a>
-
+            <input type="submit" class="btn btn-primary">
         </form>
         </div>
-        
     </body>
     </html>
 

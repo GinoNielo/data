@@ -1,7 +1,8 @@
 <?php
 
-
 include 'databaseconnectie.php';
+include 'navbar.php';
+
 if (isset($_GET['id'])) {
   try {
    $db = new Database();

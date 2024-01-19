@@ -1,14 +1,19 @@
 <?php
-include 'databaseconnectie.php';
+include 'databaseconnectie-auto.php';
+include 'navbar.php';
+
 session_start();
 
 if (isset($_SESSION['userId'])) {
     echo "Ingelogd als: " . $_SESSION['userId'];
     echo "<br><a href=logout.php>Logout</a>";
 } else {
-    header("Location:login.php");
+    header("Location:home.php");
     exit();
 }
+
+
+
 
 
 ?>
@@ -39,7 +44,7 @@ if (isset($_SESSION['userId'])) {
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-4 mb-4">Add Product</h2>
+        <h2 class="mt-4 mb-4">Auto toevoegen</h2>
         <form method="post">
             <div class="mb-3">
                 <label for="model" class="form-label">Model:</label>

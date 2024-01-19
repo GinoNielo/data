@@ -16,7 +16,7 @@
                 <li>
                     <a href="home.php"><img src="logo.jpg" alt="logo" width="100px" /></a>
                 </li>
-                <li><a href="over-ons.html">over ons</a></li>
+                <li><a href="over-ons.php">over ons</a></li>
                 <li><a href="aanmelden.php">aanmelden</a></li>
                 <li><a href="login.php">log in</a></li>
             </ul>

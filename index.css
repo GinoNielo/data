@@ -125,10 +125,17 @@ nav ul {
 nav {
     border-radius: 20px;
     height: 100px;
-    background-color: snow;
+    background-color:rgb(63, 184, 63);
 }
 
 p{
     color: white;
     text-align: center;
+}
+
+
+h1{
+    text-align: center;
+    
+    color: white;
 }
